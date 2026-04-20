@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { Project } from '../data';
 
-// EĞİTİCİ NOT: React'teki props de-structuring mantığı (const { project } = props;)
-// burada `defineProps` macro'su ile yapılır. TypeScript ile tip güvenliği sağlamak çok kolaydır.
-// Bu macro compile-time'da çalışır, import etmeye gerek yoktur.
 defineProps<{
   project: Project
 }>();
